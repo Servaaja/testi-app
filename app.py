@@ -61,7 +61,7 @@ def upload_file():
 
             print("Kohta 9")
             kulutusdata = pd.read_csv(filename,encoding = "ISO-8859-1", delimiter= ";", index_col=0)
-            hintadata = pd.read_csv(r'\sahkon-hinta-010121-250125.csv', encoding = "ISO-8859-1", delimiter= ";", index_col=0)
+            hintadata = pd.read_csv(r'https://github.com/Servaaja/testi-app/blob/master/sahkon-hinta-010121-250125.csv', encoding = "ISO-8859-1", delimiter= ";", index_col=0)
             print("Kohta 10")
 
 
