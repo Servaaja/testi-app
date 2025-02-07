@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop CSV File</title>
+    <style>
+        #drop-box {
+            width: 400px;
+            height: 200px;
+            border: 2px dashed #4CAF50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            text-align: center;
+            color: #4CAF50;
+            margin: 20px;
+        }
+        #drop-box.dragover {
+            background-color: #f0f0f0;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        #charts-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column; /* Stack vertically */
+            align-items: center; /* Center horizontally */
+        }
+        #chart {
+            margin-top: 20px;
+            max-width: 600px;
+            hight: auto;
+        }
+        #chart img {
+            width: 100%; /* Make images responsive */
+            max-width: 600px; /* Prevent images from being too large */
+            margin-bottom: 20px; /* Space between the charts */
+            hight: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Drag and Drop CSV File</h1>
+
+    <div id="drop-box">Drag and drop a CSV file here</div>
+
+
+    <h1>Enter a Float Value</h1>
+
+    <!-- Form to accept float input -->
+    <form action="/submit" method="POST">
+        <label for="value">Enter a number:</label>
+        <input type="number" id="number-input" name="number" step="any" required>
+        
+    </form>
+
+
+
+    <div id="charts-container">
+        <h2>Bar Plot</h2>
+        <img id="chart1-img" src="" alt="Bar Plot" style="display:none;"/>
+        <h2>Line Plot</h2>
+        <img id="chart2-img" src="" alt="Line Plot" style="display:none;"/>
+        <h2>Line Plot</h2>
+        <img id="chart3-img" src="" alt="Line Plot" style="display:none;"/>
+        <h2>Line Plot</h2>
+        <img id="chart4-img" src="" alt="Line Plot" style="display:none;"/>
+        <h2>Line Plot</h2>
+        <img id="chart5-img" src="" alt="Line Plot" style="display:none;"/>
+        <h2>Bar Plot</h2>
+        <img id="chart6-img" src="" alt="Bar Plot" style="display:none;"/>
+        <h2>Line Plot</h2>
+        <img id="chart7-img" src="" alt="Line Plot" style="display:none;"/>
+        <h2>Line Plot</h2>
+        <img id="chart8-img" src="" alt="Line Plot" style="display:none;"/>
+        <h2>Line Plot</h2>
+        <img id="chart9-img" src="" alt="Line Plot" style="display:none;"/>
+        <h2>Line Plot</h2>
+        <img id="chart10-img" src="" alt="Line Plot" style="display:none;"/>
+        <h2>Line Plot</h2>
+        <img id="chart11-img" src="" alt="Line Plot" style="display:none;"/>
+        <h2>Line Plot</h2>
+        <img id="chart12-img" src="" alt="Line Plot" style="display:none;"/>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
