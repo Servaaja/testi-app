@@ -425,7 +425,7 @@ def upload_file():
 
 
 
-
+            print("113")
 
             #------------------------------MONEN KUVAN PAKETTI----------TOINEN SETTI------------------------------
 
@@ -625,7 +625,7 @@ def upload_file():
             img4_base64 = base64.b64encode(img4.getvalue()).decode('utf-8')
             img4_url = f"data:image/png;base64,{img4_base64}"
 
-
+            print("114")
             
             #------------------------------MONEN KUVAN PAKETTI----------KOLMAS SETTI------------------------------
 
@@ -824,7 +824,7 @@ def upload_file():
             img5_url = f"data:image/png;base64,{img5_base64}"
 
 
-
+            print("115")
 
             #-------------------Kulutuksen jakautuminen Heatmap - Kuukaudet ja Tunnit------------------------
             kuvio = taulukko2023.pivot_table(values='Sähkönkulutus kWh', index=taulukko2023['Aika'].dt.month, columns=taulukko2023['Aika'].dt.hour, aggfunc='sum', fill_value=0)
@@ -863,7 +863,7 @@ def upload_file():
             img6_base64 = base64.b64encode(img6.getvalue()).decode('utf-8')
             img6_url = f"data:image/png;base64,{img6_base64}"
 
-
+            print("116")
             #---------------------------Kulutuksen jakautuminen Heatmap - Kuukaudet ja Päivät------------------------
             kuvio2 = taulukko2023.pivot_table(values='Sähkönkulutus kWh', index=taulukko2023['Aika'].dt.month, columns=taulukko2023['Aika'].dt.day, aggfunc='sum', fill_value=0)
             kuvio2_max = kuvio2.quantile(0.95).quantile(0.90)
@@ -978,7 +978,7 @@ def upload_file():
             # Convert the image to base64 encoding
             img9_base64 = base64.b64encode(img9.getvalue()).decode('utf-8')
             img9_url = f"data:image/png;base64,{img9_base64}"
-
+            print("117")
             #--------------------Pörssi vs kiinteä heatmap Kuukausi ja Päivä - Mitä on maksettu sähköstä----------------------------------------
             taulukko_pörssi = taulukko2023.copy()
             #Pitää laittaa indeksiin kun resample toimii vain indeksillä
@@ -1082,7 +1082,7 @@ def upload_file():
             # Convert the image to base64 encoding
             img11_base64 = base64.b64encode(img11.getvalue()).decode('utf-8')
             img11_url = f"data:image/png;base64,{img11_base64}"
-
+            print("118")
             #---------------------------Kiinteä vs Pörssi - Kumulatiivinen aikajana siitä kumman kanssa on ns. plussalla----------------------------------
             taulukko_kumSum = taulukko_erotus2.copy()
             #resetoidaan indeksi ja resampletaan ennen rivin laskemista, koska silloin kaikke menee oikein
@@ -1119,9 +1119,9 @@ def upload_file():
             # Convert the image to base64 encoding
             img12_base64 = base64.b64encode(img12.getvalue()).decode('utf-8')
             img12_url = f"data:image/png;base64,{img12_base64}"
+                
 
-
-
+            print("119")
 
             # Clean up after request
             @after_this_request
