@@ -379,9 +379,10 @@ def upload_file():
             img33 = mpimg.imread("kuva1_4.png")
             img44 = mpimg.imread("kuva3.png")
             img55 = mpimg.imread("kuva1_2.png")
-
+            print("11231")
             # Create a 4x4 GridSpec
             fig = plt.figure(num=69, figsize=(20, 20))
+            print("11232")
             gs = gridspec.GridSpec(4, 2, figure=fig)
             print("1124")
             # Place the first image in the top-left 2x2 block (spans rows 0-1, cols 0-1)
