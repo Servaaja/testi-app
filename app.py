@@ -375,6 +375,7 @@ def upload_file():
 
 
             img11 = mpimg.imread("kuva1_1.png")
+            print(img11)
             img22 = mpimg.imread("kuva1_3.png")
             img33 = mpimg.imread("kuva1_4.png")
             img44 = mpimg.imread("kuva3.png")
