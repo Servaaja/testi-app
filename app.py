@@ -1143,7 +1143,7 @@ def upload_file():
                 return response
 
 
-
+            print("LOPPU")
 
 
             return jsonify({
