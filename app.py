@@ -354,6 +354,7 @@ def upload_file():
             print("111")
             plt.figure(figsize=(2, 2))
             print("112")
+            print("1122")
             plt.title("Pörssisähkön keskihinta - Vuosi")
             plt.tick_params(axis='y', length=0, labelleft=False, labelbottom=False)
 
@@ -370,7 +371,7 @@ def upload_file():
             plt.savefig("kuva1_4", format='png')
             plt.close()
 
-
+            print("1123")
 
 
             img11 = mpimg.imread("kuva1_1.png")
@@ -382,7 +383,7 @@ def upload_file():
             # Create a 4x4 GridSpec
             fig = plt.figure(num=69, figsize=(20, 20))
             gs = gridspec.GridSpec(4, 2, figure=fig)
-
+            print("1124")
             # Place the first image in the top-left 2x2 block (spans rows 0-1, cols 0-1)
             ax1 = fig.add_subplot(gs[0:2, 0:1])  # 2x2 block
             ax1.imshow(img11)
@@ -423,7 +424,7 @@ def upload_file():
             img3_base64 = base64.b64encode(img3.getvalue()).decode('utf-8')
             img3_url = f"data:image/png;base64,{img3_base64}"
 
-
+            
 
             print("113")
 
